@@ -5,5 +5,23 @@
   $button-border-color: rgba(188, 71, 73, 1) ; // obramowanie przycisków i articles
   $button-color: rgba(128, 237, 153,1);// button
 
+  // font
 
-  $font-size: 16px;  // rozmiar czcionki
+  $font-size: 16px;  
+
+  // Rozmiary czcionek pomocnicze
+
+  $font-size-small: 0.875rem;
+  $font-size-base: 1rem;
+  $font-size-large: 1.25rem;
+
+  // Odstępy
+
+  $spacing-small: 8px;
+  $spacing-medium: 16px;
+  $spacing-large: 32px;
+
+  // zaokrąglenia 
+
+  $border-radius-large: 8px;
+  $border-radius-small: 4px;
