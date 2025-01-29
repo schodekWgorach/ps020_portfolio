@@ -1,1 +1,32 @@
-/*# sourceMappingURL=main.css.map */
+.navbar__container {
+  position: fixed;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 12% 4rem 12%;
+  background-color: rgba(56, 163, 165, 0.9);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  text-decoration: none;
+}
+
+.navbar__logo {
+  font-size: 3rem;
+  color: rgb(87, 204, 153);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar__logo span {
+  text-shadow: 0 0 20px rgb(56, 163, 165);
+}/*# sourceMappingURL=main.css.map */

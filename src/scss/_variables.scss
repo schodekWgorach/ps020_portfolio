@@ -1,9 +1,10 @@
   // Deklaracja zmiennych
 
-  $primary-color: rgba(56, 163, 165, 1);   // kolor główny
+  $background-color:rgba(56, 163, 165, 0.9);
+  $primary-color: rgba(56, 163, 165, 1);   // kolor główny  #38a3a5
   $secondary-color: rgba(87, 204, 153, 1) ;  // kolor pomocniczy
   $button-border-color: rgba(188, 71, 73, 1) ; // obramowanie przycisków i articles
-  $button-color: rgba(128, 237, 153,1);// button
+  $button-color: rgba(128, 237, 153,1); // button
 
   // font
 
@@ -17,11 +18,11 @@
 
   // Odstępy
 
-  $spacing-small: 8px;
-  $spacing-medium: 16px;
-  $spacing-large: 32px;
+  $spacing-small: 0.5rem;
+  $spacing-medium: 1rem;
+  $spacing-large: 2rem;
 
   // zaokrąglenia 
 
-  $border-radius-large: 8px;
-  $border-radius-small: 4px;
+  $border-radius-large: 0.5rem;
+  $border-radius-small: 0.25rem;
