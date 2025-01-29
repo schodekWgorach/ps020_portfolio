@@ -1,3 +1,49 @@
+@use "./variables.scss" as *;
+
 // navbar
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding: 2rem 12% 2rem 12%;
+  background-color: $background-color;
+  z-index: 5;
+}
 
+.navbar__container a {
+  text-decoration: none; /* Usunięcie podkreślenia linków */
+}
 
+.navbar__logo {
+  font-size: 3rem;
+  color: $secondary-color;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar__logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar__logo span {
+  text-shadow: 0 0 20px $primary-color;
+}
+
+.navbar__container-list {
+  display: flex;
+  list-style: none; /* Usunięcie punktów listy */
+  margin-left: 3rem;
+}
+
+.navbar__container-list li {
+  margin-left: 3rem;
+}
+
+.navbar__container-list a {
+  text-decoration: none; /* Usunięcie podkreślenia linków */
+}
