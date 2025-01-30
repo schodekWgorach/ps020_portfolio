@@ -1,43 +1,50 @@
 @use "./variables.scss" as *;
 
 
+
+body {
+        background-color: $background-color;
+}
 // navbar
 .navbar__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 80%;
+    height: 10vh;
     padding: 2rem 12% 2rem 12%;
     background-color: $background-color;
     z-index: 5;
+    font-weight: 800;
 }
 
 .navbar__container a {
     text-decoration: none;
-    text-shadow: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .navbar__logo {
     font-size: 3rem;
     color: $secondary-color;
-    font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     display: inline-flex; /* zmienione z flex */
     align-items: center; /* dodane dla wyrównania elementów w logo, jeśli to konieczne */
-  }
-  
+    gap: 15px;
+    text-shadow: 0 0 5px black;
+    
+}
 
 .navbar__logo:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    letter-spacing: 2px;
+    text-shadow: 0 0 6px blueviolet;
 }
 
-.navbar__logo span {
-    text-shadow: 0 0 20px $primary-color;
-}
+
 
 .navbar__container-list{
     display: flex;
@@ -47,25 +54,73 @@
 
 }
 .navbar__container-list li{
+    width: 100px;
     display: inline;
     list-style: none;
     margin-left: 3rem;
+    font-size: 1.2rem;
+    
 }
 
 .navbar__container-list a {
-    
-    color: $click-color;
-    font-weight: 400;
-    cursor: pointer;
+   color: $click-color;
+   cursor: pointer;
+   text-shadow: 1px 1px 3px rgba(138, 43, 226, 0.2);
+   transition: 0.3s ease-in-out;
 }
 
-.navbar__container-list:hover{
+.navbar__container-list a:hover{
     display: inline;
-    //font-weight: 800;
+    text-shadow: 2px;
     transform: scale(1.02);
-    
     color: $hover-color;
     text-decoration: none ;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+// RWD navigation
+
+@media (max-width: 768px) {
+    .navbar__container {
+        width: 100%;
+        padding: 1rem 5%;
+    }
+    .navbar__logo {
+        font-size: 2rem;
+    }
+    .navbar__container-list {
+        margin-left: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar__container-list li {
+        font-size: 1rem;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+//Home page
+
+section {
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+    background-color: $background-color;
+
+}
+.home {
+   
+    &:content{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15rem;
+    }
+
+
+
+}
 
