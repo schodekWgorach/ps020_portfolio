@@ -1,32 +1,113 @@
+@charset "UTF-8";
+body {
+  background-color: rgb(46, 79, 55);
+}
+
 .navbar__container {
-  position: fixed;
-  flex-direction: row;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 4rem 12% 4rem 12%;
-  background-color: rgba(56, 163, 165, 0.9);
-  z-index: 1000;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 10vh;
+  padding: 2rem 12% 2rem 12%;
+  background-color: rgb(46, 79, 55);
   z-index: 5;
+  font-weight: 800;
+}
+
+.navbar__container a {
   text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .navbar__logo {
   font-size: 3rem;
   color: rgb(87, 204, 153);
-  font-weight: 800;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex; /* zmienione z flex */
+  align-items: center; /* dodane dla wyrównania elementów w logo, jeśli to konieczne */
+  gap: 15px;
+  text-shadow: 0 0 5px black;
 }
 
 .navbar__logo:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  letter-spacing: 2px;
+  text-shadow: 0 0 6px blueviolet;
 }
 
-.navbar__logo span {
-  text-shadow: 0 0 20px rgb(56, 163, 165);
+.navbar__container-list {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 3rem;
+}
+
+.navbar__container-list li {
+  width: 100px;
+  display: inline;
+  list-style: none;
+  margin-left: 3rem;
+  font-size: 1.2rem;
+}
+
+.navbar__container-list a {
+  color: rgb(56, 102, 65);
+  cursor: pointer;
+  text-shadow: 1px 1px 3px rgba(138, 43, 226, 0.2);
+  transition: 0.3s ease-in-out;
+}
+
+.navbar__container-list a:hover {
+  display: inline;
+  text-shadow: 2px;
+  transform: scale(1.02);
+  color: rgb(56, 99, 65);
+  text-decoration: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .navbar__container {
+    width: 100%;
+    padding: 1rem 5%;
+  }
+  .navbar__logo {
+    font-size: 2rem;
+  }
+  .navbar__container-list {
+    margin-left: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar__container-list li {
+    font-size: 1rem;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+section {
+  min-height: 100vh;
+  padding: 10rem 12% 10rem;
+  background-color: rgb(46, 79, 55);
+}
+
+.home:content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+}
+.home h1 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+.home h3 {
+  font-size: 3rem;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
