@@ -1,5 +1,8 @@
 import React from 'react'; // Import React w przypadku starszych wersji
 import faceImage from "../src/assets/image/face.jpg"; // import faceImage
+import linkedinIcon from "./assets/icon/bxl-linkedin.svg";
+import githubIcon from "./assets/icon/bxl-github.svg";
+import gmailIcon from "./assets/icon/bxl-gmail.svg"; 
 
 
 function App() {
@@ -40,19 +43,24 @@ function App() {
                   eligendi mollitia? Atque neque sunt magni commodi quaerat odio?</p>
         
 
-            <div className="content__socialicon">
-              <a href="https://www.linkedin.com/in/szymon-schodnicki-7798b6256/" id="likedin">1</a>
-              <a href="mail" id="gmail">2</a>
-              <a href="https://github.com/schodekWgorach?tab=overview&from=2025-01-01&to=2025-01-29" id="github">3</a>
+                  <div className="content__socialicon">
+      <a href="https://www.linkedin.com/in/szymon-schodnicki-7798b6256/" id="linkedin">
+        <img src={linkedinIcon} alt="LinkedIn" />
+      </a>
+     
+      <a href="https://github.com/schodekWgorach" id="github">
+        <img src={githubIcon} alt="GitHub" />
+      </a>
+      <a href="mailto:your.email@example.com" id="gmail">
+        <img src={gmailIcon} alt="Gmail" />
+      </a>
 
-            
-            <div className="home__button">
-              <a href="#github" className="button">github</a>
-              <a href="#contakt" className="button">Kontakt</a>
-            </div>
-            
-  
-          
+      <div className="home__button">
+        <a href="#github" className="button">GitHub</a>
+        <a href="#contact" className="button">Kontakt</a>
+      </div>
+      
+         
             </div>
             </div>
           <div className="home__image">
@@ -66,7 +74,7 @@ function App() {
         
 
       </section>
-      {/* home */}
+      {/* education */}
 
 
 
