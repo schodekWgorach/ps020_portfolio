@@ -29,9 +29,7 @@ function App() {
       
       {/* home */}
       <section className="home" id='home'>
-
         <div className="home__container">
-
           <div className="home__content">
 
                 <h1 className="home__content-h1">Hi, it's<span> Szymon</span></h1>
@@ -44,21 +42,24 @@ function App() {
         
 
                   <div className="content__socialicon">
-      <a href="https://www.linkedin.com/in/szymon-schodnicki-7798b6256/" id="linkedin">
-        <img src={linkedinIcon} alt="LinkedIn" />
-      </a>
-     
-      <a href="https://github.com/schodekWgorach" id="github">
-        <img src={githubIcon} alt="GitHub" />
-      </a>
-      <a href="mailto:your.email@example.com" id="gmail">
-        <img src={gmailIcon} alt="Gmail" />
-      </a>
 
-      <div className="home__button">
-        <a href="#github" className="button">GitHub</a>
-        <a href="#contact" className="button">Kontakt</a>
-      </div>
+                    
+                  <a href="https://www.linkedin.com/in/szymon-schodnicki-7798b6256/" id="linkedin">
+                  <img src={linkedinIcon} alt="LinkedIn" />
+                  </a>
+     
+                  <a href="https://github.com/schodekWgorach" id="github">
+                    <img src={githubIcon} alt="GitHub" />
+                  </a>
+
+                  <a href="mailto:your.email@example.com" id="gmail">
+                    <img src={gmailIcon} alt="Gmail" />
+                  </a>
+
+                  <div className="home__button">
+                    <a href="#github" className="home__button-github">GitHub</a>
+                    <a href="#contact" className="home__button-conrakt">Kontakt</a>
+                  </div>
       
          
             </div>
@@ -74,7 +75,16 @@ function App() {
         
 
       </section>
+
+
       {/* education */}
+
+
+      <section className="education" id='education'>
+
+
+
+      </section>
 
 
 
