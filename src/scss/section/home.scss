@@ -66,11 +66,11 @@ align-items: center;
 justify-content: center;
 background-color: $secondary-color;
 color: white;   
-padding: 1rem 2rem;
+padding: 1vw 2vw;
 
 
     &-github{
-        margin-right: 1rem;
+        margin-right: min(10vw, 8%);
         margin-left: 0;
     }
 
