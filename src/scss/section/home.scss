@@ -49,8 +49,7 @@
 
     &-socjalicon a{
         display: flex;
-        justify-content: center;
-           
+        justify-content: center;           
         align-items: center;
         padding: 30px;
         margin-bottom: 30px;
@@ -67,16 +66,31 @@ justify-content: center;
 background-color: $secondary-color;
 color: white;   
 padding: 1vw 2vw;
+width: 100%;
+height: 30vh;
+border: solid 1px ;
+
+
 
 
     &-github{
+        width: 50%;
+        height: 30vh;
+        border: solid 1px ;
+        border-radius: 50%;
         margin-right: min(10vw, 8%);
-        margin-left: 0;
+        direction: none;
+        //margin-left: 0;
     }
 
     &-linkedin{
+        width: 50%;
+        height: 30vh;
+        //border: solid 1px ;
+        border-radius: 50%;
         margin-left: 1rem;
-        margin-right: 0;
+        direction: none;
+        //margin-right: 0;
     }
 }
 
