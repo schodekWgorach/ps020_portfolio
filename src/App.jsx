@@ -57,8 +57,8 @@ function App() {
                   </a>
 
                   <div className="home__button">
-                    <a href="#github" className="home__button-github">GitHub</a>
-                    <a href="#contact" className="home__button-conrakt">Kontakt</a>
+                    <button href="#github" className="home__button-github">GitHub</button>
+                    <button href="#contact" className="home__button-conrakt">Kontakt</button>
                   </div>
       
          

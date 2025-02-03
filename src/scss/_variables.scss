@@ -9,6 +9,11 @@
   $hover-color:rgba(56, 99, 65, 1);
   $shadow-color: blueviolet;
 
+
+  // button colors
+
+  $hover-color: darken($primary-color, 10%);
+  $active-color: darken($primary-color, 20%);
   // font
 
   $font-size: 16px;  
