@@ -1,4 +1,5 @@
 @use "../variables" as *;
+@use "../../mixins/mixins.scss" as *;
 
 
 // Home page   Home page   Home page   Home page   Home page 
@@ -59,23 +60,13 @@
 
 //Button
 
-.home__button{
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-background-color: $secondary-color;  // zminan koloru
-color: $secondary-color;   
-padding: 1vw 2vw;
+.home__button-github {
+    @include button__styles(#007bff, white, 10px 20px, 5px, 16px, 200px, 50px);
+  }
 
-    &-github a{
-   text-decoration: none;
-    }
-
-    &-linkedin a{
-    text-decoration: none;
-    }
-}
+.home__button-linkedin {
+    @include button__styles(#007bff, white, 10px 20px, 5px, 16px, 200px, 50px);
+  }
 
 a img {
     /* Zmienna wielkość ikony */

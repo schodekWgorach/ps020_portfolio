@@ -3,13 +3,13 @@
   $background-color:rgba(46, 79, 55, 1);
   $primary-color: rgba(56, 163, 165, 1);   // kolor główny  #38a3a5
   $secondary-color: rgba(87, 204, 153, 1) ;  // kolor pomocniczy
-  $button-border-color: rgba(188, 71, 73, 1) ; // obramowanie przycisków i articles
+  $button__border-color: rgba(188, 71, 73, 1) ; // obramowanie przycisków i articles
+  $button__border-radius:rgba(188, 71, 73, 1);
   $button__text-color: $background-color;
-  $padding:red;
+  $padding: 20px;
+  $shadow-color: rgba(255, 255, 255,1);
   $button-color: rgba(128, 237, 153,1); // button
   $click-color: rgba(56, 102, 65, 1); //#386641
-  $hover-color:rgba(56, 99, 65, 1);
-  $shadow-color: blueviolet;
 
   // button colors
 

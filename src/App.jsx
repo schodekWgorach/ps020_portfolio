@@ -60,7 +60,7 @@ function App() {
 
                   <div className="home__button">
                     <button href="#github" className="home__button-github" id='home__button-github'>GitHub</button>
-                    <button href="#contact" className="home__button-conrakt" id='home__button-linkedin'>Kontakt</button>
+                    <button href="#contact" className="home__button-linkedin" id='home__button-linkedin'>Kontakt</button>
                   </div>
       
          
