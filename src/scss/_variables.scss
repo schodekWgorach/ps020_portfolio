@@ -4,16 +4,18 @@
   $primary-color: rgba(56, 163, 165, 1);   // kolor główny  #38a3a5
   $secondary-color: rgba(87, 204, 153, 1) ;  // kolor pomocniczy
   $button-border-color: rgba(188, 71, 73, 1) ; // obramowanie przycisków i articles
+  $button__text-color: $background-color;
+  $padding:red;
   $button-color: rgba(128, 237, 153,1); // button
   $click-color: rgba(56, 102, 65, 1); //#386641
   $hover-color:rgba(56, 99, 65, 1);
   $shadow-color: blueviolet;
 
-
   // button colors
 
   $hover-color: darken($primary-color, 10%);
   $active-color: darken($primary-color, 20%);
+  
   // font
 
   $font-size: 16px;  
@@ -25,12 +27,12 @@
   $font-size-large: 1.25rem;
 
   // Odstępy
-
+ 
   $spacing-small: 0.5rem;
   $spacing-medium: 1rem;
   $spacing-large: 2rem;
 
   // zaokrąglenia 
-
+ 
   $border-radius-large: 0.5rem;
   $border-radius-small: 0.25rem;

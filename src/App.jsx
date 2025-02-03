@@ -56,9 +56,11 @@ function App() {
                     <img src={gmailIcon} alt="Gmail" />
                   </a>
 
+                  {/* home button */} 
+
                   <div className="home__button">
-                    <button href="#github" className="home__button-github">GitHub</button>
-                    <button href="#contact" className="home__button-conrakt">Kontakt</button>
+                    <button href="#github" className="home__button-github" id='home__button-github'>GitHub</button>
+                    <button href="#contact" className="home__button-conrakt" id='home__button-linkedin'>Kontakt</button>
                   </div>
       
          
