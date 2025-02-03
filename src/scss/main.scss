@@ -1,6 +1,11 @@
 @use "./variables" as *;
 @use "./section/home.scss" as *;
 @use "./section/navbar.scss" as *;
+@use "../mixins/mixins.scss" as *;
+ 
+
+
+
 
 body {
         background-color: $background-color;
