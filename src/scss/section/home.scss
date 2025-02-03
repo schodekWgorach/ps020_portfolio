@@ -61,11 +61,11 @@
 //Button
 
 .home__button-github {
-    @include button__styles(#007bff, white, 10px 20px, 5px, 16px, 200px, 50px);
+    @include button__styles(#007bff, $background-color, 10px 20px, 20px, 16px, 200px, 50px);
   }
 
 .home__button-linkedin {
-    @include button__styles(#007bff, white, 10px 20px, 5px, 16px, 200px, 50px);
+    @include button__styles(#007bff, $background-color, 10px 20px, 20px, 16px, 200px, 50px);
   }
 
 a img {
