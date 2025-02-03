@@ -61,36 +61,19 @@
 
 .home__button{
 display: flex;
+flex-direction: row;
 align-items: center;
 justify-content: center;
-background-color: $secondary-color;
-color: white;   
+background-color: $secondary-color;  // zminan koloru
+color: $secondary-color;   
 padding: 1vw 2vw;
-width: 100%;
-height: 30vh;
-border: solid 1px ;
 
-
-
-
-    &-github{
-        width: 50%;
-        height: 30vh;
-        border: solid 1px ;
-        border-radius: 50%;
-        margin-right: min(10vw, 8%);
-        direction: none;
-        //margin-left: 0;
+    &-github a{
+   text-decoration: none;
     }
 
-    &-linkedin{
-        width: 50%;
-        height: 30vh;
-        //border: solid 1px ;
-        border-radius: 50%;
-        margin-left: 1rem;
-        direction: none;
-        //margin-right: 0;
+    &-linkedin a{
+    text-decoration: none;
     }
 }
 
