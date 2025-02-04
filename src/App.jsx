@@ -41,7 +41,7 @@ function App() {
                   eligendi mollitia? Atque neque sunt magni commodi quaerat odio?</p>
         
 
-                  <div className="content__socialicon">
+                  <div className="home__content-socjalicon">
 
                     
                   <a href="https://www.linkedin.com/in/szymon-schodnicki-7798b6256/" id="linkedin">
@@ -56,6 +56,8 @@ function App() {
                     <img src={gmailIcon} alt="Gmail" />
                   </a>
 
+                  </div>
+
                   {/* home button */} 
 
                   <div className="home__button">
@@ -64,7 +66,7 @@ function App() {
                   </div>
       
          
-            </div>
+            
             </div>
           <div className="home__image">
           <img src={faceImage} alt="zdięcie profilowe" />
