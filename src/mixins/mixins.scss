@@ -1,8 +1,9 @@
+@use "../scss/variables" as *;
+
 @mixin button__styles($background-color, $button__text-color, 
 $padding: 10px 20px, $border-radius: 10px, $font-size: 16px, 
 $width: auto, $height: auto) {
     background-color: $background-color;
-
     color: $button__text-color;
     padding: $padding;
     border: 2px solid black;
@@ -15,14 +16,14 @@ $width: auto, $height: auto) {
     margin: 10px;
   
     &:hover {
-      background-color: red;
-      color: black;
+      background-color: $background-color;
+      color: $hover-color;
       border-radius: $border-radius;
     }
   
     &:active {
-      background-color: green;
-      color: grey;
+      background-color: $background-color;
+      color: $active-color;
       border-radius: $border-radius;
     }
   }

@@ -13,7 +13,7 @@
     }
 
 .home__content{
-    background-color: yellow;
+    background-color: $background-color;
     width: 50%;
     padding: 3rem 3rem 3rem 3rem;
     color: $secondary-color;
@@ -48,10 +48,12 @@
 
     }
 
-    &-socjalicon a{
+    &-socjalicon {
         display: flex;
+        flex-wrap: wrap; /* Pozwoli na złamanie linii, jeśli przyciski są za duże */
         justify-content: center;           
         align-items: center;
+        gap: 20px;
         padding: 30px;
         margin-bottom: 30px;
       
@@ -59,13 +61,18 @@
     }
 
 //Button
+.home__button{
+    display: inline;
+    justify-content: center
+
+}
 
 .home__button-github {
-    @include button__styles(#007bff, $background-color, 10px 20px, 20px, 16px, 200px, 50px);
+    @include button__styles(#144804, $background-color, 10px 20px, 20px, 16px, 200px, 50px);
   }
 
 .home__button-linkedin {
-    @include button__styles(#007bff, $background-color, 10px 20px, 20px, 16px, 200px, 50px);
+    @include button__styles($background-color, $secondary-color, 10px 20px, 20px, 16px, 200px, 50px);
   }
 
 a img {
@@ -78,18 +85,16 @@ a img {
     box-shadow: 0 0 25px $secondary-color,
                 0 0 50px $hover-color,
                 0 0 75px $hover-color;
-    transform: scale(1.1);
-    
-    
+    transform: scale(1.05);
+      
   }
-
 
 .home__image{
     position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: $background-color;
     height: auto;  
     width: 30%;  
     margin: 0 auto;
