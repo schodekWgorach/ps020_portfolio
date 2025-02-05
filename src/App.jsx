@@ -5,6 +5,8 @@ import githubIcon from "./assets/icon/bxl-github.svg";
 import gmailIcon from "./assets/icon/bxl-gmail.svg"; 
 
 
+
+
 function App() {
   return (
 
@@ -44,15 +46,15 @@ function App() {
                   <div className="home__content-socjalicon">
 
                     
-                  <a href="https://www.linkedin.com/in/szymon-schodnicki-7798b6256/" id="linkedin">
+                  <a href="https://www.linkedin.com/in/szymon-schodnicki-7798b6256/" id="linkedin" className='home__content-social'>
                   <img src={linkedinIcon} alt="LinkedIn" />
                   </a>
      
-                  <a href="https://github.com/schodekWgorach" id="github">
+                  <a href="https://github.com/schodekWgorach" id="github" className='home__content-social'>
                     <img src={githubIcon} alt="GitHub" />
                   </a>
 
-                  <a href="mailto:your.email@example.com" id="gmail">
+                  <a href="mailto:your.email@example.com" id="gmail" className='home__content-social'>
                     <img src={gmailIcon} alt="Gmail" />
                   </a>
 
@@ -98,6 +100,7 @@ function App() {
     
   );
 }
+
 
 
 
