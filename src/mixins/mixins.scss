@@ -19,11 +19,13 @@ $width: auto, $height: auto) {
       background-color: $background-color;
       color: $hover-color;
       border-radius: $border-radius;
+      box-shadow: 0 0 5px $hover-color;
     }
   
     &:active {
       background-color: $background-color;
       color: $active-color;
       border-radius: $border-radius;
+      box-shadow: 0 0 10px $active-color;
     }
   }
