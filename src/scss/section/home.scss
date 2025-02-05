@@ -61,12 +61,14 @@
     }
 
 //Button
-.home__button{
-    display: inline;
-    justify-content: center
-
+.home__button {
+    display: flex;  // Ustawienie flexboxa
+    justify-content: center; // Wyśrodkowanie w poziomie
+    align-items: center; // Wyśrodkowanie w pionie
+    gap: 20px; // Dodanie odstępu między przyciskami
+    width: 100%; // Wypełnienie dostępnej przestrzeni
+    margin-top: 20px; // Opcjonalny odstęp od góry
 }
-
 .home__button-github {
     @include button__styles(#144804, $background-color, 10px 20px, 20px, 16px, 200px, 50px);
   }
