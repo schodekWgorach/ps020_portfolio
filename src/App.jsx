@@ -1,109 +1,70 @@
-import React from 'react'; // Import React w przypadku starszych wersji
-import faceImage from "../src/assets/image/face.jpg"; // import faceImage
+import React from "react";
+import { useAnimatedText } from "./hooks/useAnimatedText";
+import faceImage from "../src/assets/image/face.jpg";
 import linkedinIcon from "./assets/icon/bxl-linkedin.svg";
 import githubIcon from "./assets/icon/bxl-github.svg";
-import gmailIcon from "./assets/icon/bxl-gmail.svg"; 
-
-
-
+import gmailIcon from "./assets/icon/bxl-gmail.svg";
 
 function App() {
+  const words = ["Web Developer", "Frontend Developer", "React Developer", "JavaScript Enthusiast"];
+  const { text, fade } = useAnimatedText(words, 3000); // Animacja co 3 sekundy
+
   return (
-
     <div className="App">
-      
-        <header className="navbar__container">
-          <a href="#home" className="navbar__logo"> Szymon
-            <span> Schodnicki</span>
-          </a>
+      <header className="navbar__container">
+        <a href="#home" className="navbar__logo">
+          Szymon <span>Schodnicki</span>
+        </a>
+        <div className="navbar__container-list">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>  
+            <li><a href="#technologies">Technologies</a></li>  
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </header>
 
-          <div className="navbar__container-list">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#education">llln</a></li>  
-              <li><a href="#technologies">Technologies</a></li>  
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-
-         
-          </div>
-        </header>
-      
-      {/* home */}
-      <section className="home" id='home'>
+      {/* Sekcja Home */}
+      <section className="home" id="home">
         <div className="home__container">
           <div className="home__content">
+            <h1 className="home__content-h1">
+              Hi, it's <span>Szymon</span>
+            </h1>
+            <h3 className="home__content-animation">
+              I'm a <span className={`fade-text ${fade ? "visible" : "hidden"}`}>{text}</span>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
 
-                <h1 className="home__content-h1">Hi, it's<span> Szymon</span></h1>
-                <h3 className="home__content-animation">I'm a</h3>
-                
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maiores doloremque eaque aspernatur incidunt saepe 
-                  temporibus ex reprehenderit similique est ipsa repudiandae,
-                  eligendi mollitia? Atque neque sunt magni commodi quaerat odio?</p>
-        
-
-                  <div className="home__content-socjalicon">
-
-                    
-                  <a href="https://www.linkedin.com/in/szymon-schodnicki-7798b6256/" id="linkedin" className='home__content-social'>
-                  <img src={linkedinIcon} alt="LinkedIn" />
-                  </a>
-     
-                  <a href="https://github.com/schodekWgorach" id="github" className='home__content-social'>
-                    <img src={githubIcon} alt="GitHub" />
-                  </a>
-
-                  <a href="mailto:your.email@example.com" id="gmail" className='home__content-social'>
-                    <img src={gmailIcon} alt="Gmail" />
-                  </a>
-
-                  </div>
-
-                  {/* home button */} 
-
-                  <div className="home__button">
-                    <button href="#github" className="home__button-github" id='home__button-github'>GitHub</button>
-                    <button href="#contact" className="home__button-linkedin" id='home__button-linkedin'>Kontakt</button>
-                  </div>
-      
-         
-            
+            {/* Ikony społecznościowe */}
+            <div className="home__content-socjalicon">
+              <a href="https://www.linkedin.com/in/szymon-schodnicki-7798b6256/" className="home__content-social">
+                <img src={linkedinIcon} alt="LinkedIn" />
+              </a>
+              <a href="https://github.com/schodekWgorach" className="home__content-social">
+                <img src={githubIcon} alt="GitHub" />
+              </a>
+              <a href="mailto:your.email@example.com" className="home__content-social">
+                <img src={gmailIcon} alt="Gmail" />
+              </a>
             </div>
+
+            {/* Przycisk */}
+            <div className="home__button">
+              <button className="home__button-github">GitHub</button>
+              <button className="home__button-linkedin">Kontakt</button>
+            </div>
+          </div>
+
+          {/* Obraz profilowy */}
           <div className="home__image">
-          <img src={faceImage} alt="zdięcie profilowe" />
-          
-          
+            <img src={faceImage} alt="Profilowe" />
+          </div>
         </div>
-        
-          
-      </div>
-        
-
       </section>
-
-
-      {/* education */}
-
-
-      <section className="education" id='education'>
-
-
-
-      </section>
-
-
-
-
-      {/*  App ends here */}
-      </div>
-    
+    </div>
   );
 }
-
-
-
-
-
 
 export default App;
