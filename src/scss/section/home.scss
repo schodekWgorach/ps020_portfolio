@@ -58,7 +58,7 @@
         margin-bottom: 30px;
       
      }
-     &-social{
+    &-social{
         color: red;
         text-align: center;
         font-size: 2rem;
@@ -69,7 +69,51 @@
         padding: -2px 3px;
         border-radius: 50%;
      }
+
+     @keyframes words {
+        0% { content: "Web Developer"; }
+        25% { content: "Frontend Developer"; }
+        50% { content: "React Developer"; }
+        75% { content: "JavaScript Enthusiast"; }
+        100% { content: "Web Developer"; }
+      }
+      
+    
     }
+    .home__content-animation {
+        font-size: 34px;
+        font-weight: 600;
+        min-width: 280px;
+      
+        &:hover {
+          transform: scale(1.02);
+          transition: transform 0.3s ease-in-out;
+        }
+      
+        span {
+          position: relative;
+          width: 100%;
+          background-color: $background-color;
+          color: $secondary-color;
+          transition: background-color 0.3s ease, color 0.3s ease;
+          display: inline-block;
+      
+          &:before {
+            content: "Web Developer"; // ✅ Poprawiona literówka
+            position: absolute;
+            animation: words 20s infinite;
+            background-color: aliceblue;
+          }
+      
+          &:after {
+            content: "";
+            position: absolute;
+            background-color: aliceblue;
+          }
+        }
+      }
+
+   
 
 //Button
 .home__button {
