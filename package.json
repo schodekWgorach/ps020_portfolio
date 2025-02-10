@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
+    "raect": "^1.0.4",
     "react": "18.0",
     "react-dom": "18.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.83.4"
+    "sass": "^1.83.4",
+    "scss": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
