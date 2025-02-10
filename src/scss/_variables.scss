@@ -8,11 +8,11 @@
   $button__text-color: $background-color;
   $padding: 20px;
   $shadow-color: rgb(49, 114, 66);
-  $button-color: rgba(128, 237, 153,1); // button
   $click-color: rgba(56, 102, 65, 1); //#386641
 
   // button colors
 
+  $button-color: rgba(128, 237, 153,1); // button
   $hover-color: darken($primary-color, 10%);
   $active-color: darken($primary-color, 20%);
   

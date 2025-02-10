@@ -71,14 +71,15 @@ function App() {
         <h2 className="heading">Education</h2>
         
 
-        <div className="education__timelien-items">
+        <div className="education__timeline-items">
 
 {/* Education rok 2000 */}
 
-      <div className="education__timelien-item">
+      <div className="education__timeline-item">
         <div className="education__timeline-dot">
-          <div className="education__timeline-date">9999
-          </div>
+
+          <div className="education__timeline-date">2001</div>
+
            <div className="education__timeline-content">
             <h3>High School</h3>
             <p>Lorem ipsum dolor sit amet, 
@@ -87,13 +88,11 @@ function App() {
                nam aliquam perferendis veritatis deserunt rerum, aspernatur 
                omnis adipisci reiciendis vitae voluptate!</p>
            </div>
-           </div> 
-        </div>
-      </div>
-       
-{/* Education rok 2000 */}
-<div></div>
 
+          </div> 
+        </div>
+   
+        </div>
       </section>
     </div>
   );
