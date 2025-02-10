@@ -1,4 +1,5 @@
 @use "../variables" as *;
+@use "./home.scss" as *;
 
 .heading {
     font-size: 8rem;
@@ -33,8 +34,9 @@
 
 
 .education__timeline-item{
-    margin-bottom: 40px;
-    width: 400%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 100%;
     position: relative;
 }
 
@@ -44,6 +46,37 @@
 
 .education__timeline-item:nth-child(odd){
     padding-right: calc(50% + 30px);
+    text-align: right;
 }
 
+.education__timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
 
+.education__timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: $button__border-color;
+    box-shadow: 0 0 25px $button__border-color,
+                0 0 25px $button__border-color;
+    position: absolute;
+    left: calc(50% + 30px);
+    border-radius: 50%;
+    top: 10px;
+
+}
+
+.education__timeline-date{
+    font-family: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px ;
+
+}
+
+.education__timeline-content{
+   background-color: $background-color;
+   border: 3px solid $primary-color;
+}
+
+//.education

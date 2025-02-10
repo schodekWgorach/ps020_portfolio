@@ -71,29 +71,89 @@ function App() {
         <h2 className="heading">Education</h2>
         
 
-        <div className="education__timeline-items">
+    <div className="education__timeline-items">
 
-{/* Education rok 2000 */}
+{/* Education rok 2001 */}
 
       <div className="education__timeline-item">
         <div className="education__timeline-dot">
 
           <div className="education__timeline-date">2001</div>
 
-           <div className="education__timeline-content">
-            <h3>High School</h3>
-            <p>Lorem ipsum dolor sit amet, 
-              consectetur adipisicing elit. Fuga tempora corporis
-               fugit! Obcaecati, facere nesciunt. Delectus corporis nobis 
-               nam aliquam perferendis veritatis deserunt rerum, aspernatur 
-               omnis adipisci reiciendis vitae voluptate!</p>
-           </div>
+                <div className="education__timeline-content">
+                  <h3>High School</h3>
+                  <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit. Fuga tempora corporis
+                    fugit! Obcaecati, facere nesciunt. Delectus corporis nobis 
+                    nam aliquam perferendis veritatis deserunt rerum, aspernatur 
+                    omnis adipisci reiciendis vitae voluptate!</p>
+                </div>
+           </div> 
+      </div>
+       
 
-          </div> 
-        </div>
-   
-        </div>
-      </section>
+
+{/* Education rok 2010 */}
+
+
+<div className="education__timeline-item">
+        <div className="education__timeline-dot">
+
+          <div className="education__timeline-date">2010</div>
+
+                <div className="education__timeline-content">
+                  <h3>High School</h3>
+                  <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit. Fuga tempora corporis
+                    fugit! Obcaecati, facere nesciunt. Delectus corporis nobis 
+                    nam aliquam perferendis veritatis deserunt rerum, aspernatur 
+                    omnis adipisci reiciendis vitae voluptate!</p>
+                </div>
+           </div> 
+      </div>
+
+
+
+{/* Education rok 2012 */}
+
+
+<div className="education__timeline-item">
+        <div className="education__timeline-dot">
+
+          <div className="education__timeline-date">2012</div>
+
+                <div className="education__timeline-content">
+                  <h3>High School</h3>
+                  <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit. Fuga tempora corporis
+                    fugit! Obcaecati, facere nesciunt. Delectus corporis nobis 
+                    nam aliquam perferendis veritatis deserunt rerum, aspernatur 
+                    omnis adipisci reiciendis vitae voluptate!</p>
+                </div>
+           </div> 
+      </div>
+{/* Education rok 2022 */}
+
+
+<div className="education__timeline-item">
+        <div className="education__timeline-dot">
+
+          <div className="education__timeline-date">2022</div>
+
+                <div className="education__timeline-content">
+                  <h3>High School</h3>
+                  <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit. Fuga tempora corporis
+                    fugit! Obcaecati, facere nesciunt. Delectus corporis nobis 
+                    nam aliquam perferendis veritatis deserunt rerum, aspernatur 
+                    omnis adipisci reiciendis vitae voluptate!</p>
+                </div>
+           </div> 
+      </div>
+
+{/* end of education*/}
+          </div>
+       </section>
     </div>
   );
 }
