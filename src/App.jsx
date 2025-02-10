@@ -63,6 +63,38 @@ function App() {
           </div>
         </div>
       </section>
+
+{/* Education */}
+
+
+      <section className="education"  id="education">
+        <h2 className="heading">Education</h2>
+        
+
+        <div className="education__timelien-items">
+
+{/* Education rok 2000 */}
+
+      <div className="education__timelien-item">
+        <div className="education__timeline-dot">
+          <div className="education__timeline-date">9999
+          </div>
+           <div className="education__timeline-content">
+            <h3>High School</h3>
+            <p>Lorem ipsum dolor sit amet, 
+              consectetur adipisicing elit. Fuga tempora corporis
+               fugit! Obcaecati, facere nesciunt. Delectus corporis nobis 
+               nam aliquam perferendis veritatis deserunt rerum, aspernatur 
+               omnis adipisci reiciendis vitae voluptate!</p>
+           </div>
+           </div> 
+        </div>
+      </div>
+       
+{/* Education rok 2000 */}
+<div></div>
+
+      </section>
     </div>
   );
 }
