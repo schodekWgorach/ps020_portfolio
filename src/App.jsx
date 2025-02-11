@@ -18,8 +18,9 @@ function App() {
         <div className="navbar__container-list">
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#education">Education</a></li>  
-            <li><a href="#technologies">Technologies</a></li>  
+            <li><a href="#education">Education</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#itprojekt">It projekt</a></li>  
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -142,10 +143,42 @@ function App() {
 {/* end of education*/}
           </div>
        </section>
-  <section>
+
+ {/* Technologies */}      
+  <section className="technologies" id="technologies">
+    <h2 className="heading">Technologies</h2>
+
+      <div className="technologies__container">
 
 
+        {/* HTML SCSS */} 
+        <div className="technologis__container-box">
+          <h4>HTML SCSS</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur  </p>
+        </div>
 
+        {/* JavaScript   */} 
+
+        <div className="technologis__container-box">
+          <h4>JavaScript</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur  </p>
+        </div>
+
+        {/* GIT   */} 
+
+        <div className="technologis__container-box">
+          <h4>GIT</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur  </p>
+        </div>
+
+        {/* GIT   */} 
+
+        <div className="technologis__container-box">
+          <h4>HTML SCSS</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur  </p>
+        </div>
+
+      </div>
   </section>
   
 {/* end of App below*/}
