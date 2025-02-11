@@ -1,5 +1,6 @@
 @use "../variables" as *;
 @use "./home.scss" as *;
+@use "sass:color";
 
 .heading {
     font-size: 8rem;
@@ -8,8 +9,12 @@
 }
 
 .education{
-    padding: 100px 15px;
+    padding: 50px 15px;
     background-color: $background-color;
+    color: $secondary-color;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    
+    margin-top: 30px;
 }
 
 .education h2{
@@ -22,61 +27,107 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    
+    
 }
 .education__timeline-items::before{
     content: "";
     position: absolute;
+    margin-top: 60px;
     width: 5px;
-    height: 100%;
-    background-color: $button__border-color;
+    height: calc(100% + 30px);
+    background-color: black;
     left: calc(50% - 1px);
+    height: calc(100% + 30px);
+    top: -30px;
+    
 }
-
-
 .education__timeline-item{
-    margin-top: 20px;
-    margin-bottom: 60px;
-    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 200px;
+    width: 50%;
     position: relative;
+    
 }
 
 .education__timeline-item:last-child{
     margin-bottom: 0;
 }
 
+
 .education__timeline-item:nth-child(odd){
     padding-right: calc(50% + 30px);
     text-align: right;
+    margin-top: 50px;
+ 
 }
 
 .education__timeline-item:nth-child(even){
     padding-left: calc(50% + 30px);
+    text-align: right;
+    margin-top: 50px;
 }
 
 .education__timeline-dot{
     height: 21px;
     width: 21px;
-    background-color: $button__border-color;
-    box-shadow: 0 0 25px $button__border-color,
-                0 0 25px $button__border-color;
+    background-color: $secondary__darken-color;
+    box-shadow: 0 0 25px $secondary__darken-color,
+                0 0 25px $secondary__darken-color;
+    border: 1px solid  $button__border-color;
     position: absolute;
-    left: calc(50% + 30px);
+    left: calc(50% - 8px);
     border-radius: 50%;
-    top: 10px;
+    top: 5px;
 
 }
+
 
 .education__timeline-date{
-    font-family: 20px;
     font-weight: 800;
-    color: white;
-    margin: 6px 0 15px ;
-
+    color: $button-color;
+    margin: 0px 30px ;
+    transform: translateX(-100px); /* Przesunięcie o 50 pikseli w lewo */
 }
+
+
 
 .education__timeline-content{
    background-color: $background-color;
    border: 3px solid $primary-color;
+   box-shadow: 3px 3px 5px rgba(30, 121, 63, 0.3);
+   border-radius: 10px;
+   padding: 10px;
+   position: absolute;
+   margin-left: 60px;
+   //top: 50px;
+   width: 25rem;
+   height: calc(100% + 40px);
+    top: -30px;
+   
 }
 
-//.education
+.education__timeline-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+.education__timeline-content:before{
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+}
+
+.education__timeline-content h3{
+    font-size: 20px;
+    color: $secondary__darken-color;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.education__timeline-content p{
+    font-size: 16px;
+    color: $secondary-color;
+    line-height: 22px;
+    font-weight: 300;  
+}
