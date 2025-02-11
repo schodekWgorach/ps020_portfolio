@@ -83,10 +83,7 @@ function App() {
                 <div className="education__timeline-content">
                   <h3>High School</h3>
                   <p>Lorem ipsum dolor sit amet, 
-                    consectetur adipisicing elit. Fuga tempora corporis
-                    fugit! Obcaecati, facere nesciunt. Delectus corporis nobis 
-                    nam aliquam perferendis veritatis deserunt rerum, aspernatur 
-                    omnis adipisci reiciendis vitae voluptate!</p>
+                    consectetur adipisicing </p>
                 </div>
            </div> 
       </div>
@@ -104,10 +101,7 @@ function App() {
                 <div className="education__timeline-content">
                   <h3>High School</h3>
                   <p>Lorem ipsum dolor sit amet, 
-                    consectetur adipisicing elit. Fuga tempora corporis
-                    fugit! Obcaecati, facere nesciunt. Delectus corporis nobis 
-                    nam aliquam perferendis veritatis deserunt rerum, aspernatur 
-                    omnis adipisci reiciendis vitae voluptate!</p>
+                  consectetur adipisicing </p>
                 </div>
            </div> 
       </div>
@@ -125,10 +119,7 @@ function App() {
                 <div className="education__timeline-content">
                   <h3>High School</h3>
                   <p>Lorem ipsum dolor sit amet, 
-                    consectetur adipisicing elit. Fuga tempora corporis
-                    fugit! Obcaecati, facere nesciunt. Delectus corporis nobis 
-                    nam aliquam perferendis veritatis deserunt rerum, aspernatur 
-                    omnis adipisci reiciendis vitae voluptate!</p>
+                  consectetur adipisicing </p>
                 </div>
            </div> 
       </div>
@@ -143,10 +134,7 @@ function App() {
                 <div className="education__timeline-content">
                   <h3>High School</h3>
                   <p>Lorem ipsum dolor sit amet, 
-                    consectetur adipisicing elit. Fuga tempora corporis
-                    fugit! Obcaecati, facere nesciunt. Delectus corporis nobis 
-                    nam aliquam perferendis veritatis deserunt rerum, aspernatur 
-                    omnis adipisci reiciendis vitae voluptate!</p>
+                  consectetur adipisicing </p>
                 </div>
            </div> 
       </div>
@@ -154,7 +142,14 @@ function App() {
 {/* end of education*/}
           </div>
        </section>
-    </div>
+  <section>
+
+
+
+  </section>
+  
+{/* end of App below*/}
+    </div> 
   );
 }
 

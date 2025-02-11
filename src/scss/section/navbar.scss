@@ -18,15 +18,15 @@
     font-weight: 800;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
-    &.hidden {
-        transform: translateY(-100%); // Ukrywa navbar poza ekranem
-        opacity: 0;
-    }
+    // &.hidden {
+    //     transform: translateY(-100%); // Ukrywa navbar poza ekranem
+    //     opacity: 0;
+    // }
 
-    &.visible {
-        transform: translateY(0); // Pokazuje navbar
-        opacity: 1;
-    }
+    // &.visible {
+    //     transform: translateY(0); // Pokazuje navbar
+    //     opacity: 1;
+    // }
 }
 
 .navbar__container a {
