@@ -1,0 +1,56 @@
+@use "../variables" as *;
+@use "./home.scss" as *;
+@use "sass:color";
+
+.heading {
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.technologies{
+    padding: 50px 15px;
+    //background-color: $background-color;
+    color: $secondary-color;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.technologies__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px 0;
+    padding: 10px 0;
+    //background-color: beige;
+}
+
+.technologies__container:first-child{
+    margin-top: 2rem;
+}
+
+.technologies__container-box{
+    border: 3px solid rgba(17, 12, 12, 0.9);
+    border-radius: 10px;
+   //background-color: red;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgba(30, 121, 63, 0.3);
+    width: 33%;
+}
+
+.technologies__container-box:hover{
+    color: white;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+.technologies__container-box h4{
+    color: $secondary-color;   
+    
+}
+
+.technologies__container-box h4:hover{
+    color: white;
+}
+

@@ -152,33 +152,57 @@ function App() {
 
 
         {/* HTML SCSS */} 
-        <div className="technologis__container-box">
+        <div className="technologies__container-box">
           <h4>HTML SCSS</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur  </p>
+          <p>HTML i SCSS to potężne narzędzia, 
+            które pozwalają mi tworzyć piękne i funkcjonalne strony internetowe.
+             HTML służy do strukturyzowania treści, a SCSS do stylowania jej w sposób 
+             elastyczny i łatwy w utrzymaniu. Dzięki znajomości tych technologii
+             mogę realizować projekty zgodnie z najnowszymi trendami i standardami.  </p>
         </div>
 
         {/* JavaScript   */} 
 
-        <div className="technologis__container-box">
+        <div className="technologies__container-box">
           <h4>JavaScript</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur  </p>
+          <p>JavaScript to język programowania,
+             który umożliwia mi tworzenie interaktywnych i dynamicznych stron internetowych.
+              Dzięki niemu mogę dodawać animacje, obsługiwać formularze i budować 
+              responsywne aplikacje webowe. Moje umiejętności
+             JavaScript pozwalają mi tworzyć nowoczesne i angażujące projekty. </p>
+        </div>
+
+        {/* React   */} 
+
+        <div className="technologies__container-box">
+          <h4>React</h4>
+          <p>React to biblioteka JavaScript, która pozwala mi
+             tworzyć interaktywne i dynamiczne interfejsy użytkownika oparte na
+              komponentach. Dzięki React mogę budować skalowalne i wydajne aplikacje 
+              internetowe, które zapewniają użytkownikom płynne i responsywne doświadczenie.
+               Moje umiejętności React pozwalają mi tworzyć nowoczesne i angażujące projekty,
+             spełniające najwyższe standardy jakości. </p>
         </div>
 
         {/* GIT   */} 
 
-        <div className="technologis__container-box">
+        <div className="technologies__container-box">
           <h4>GIT</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur  </p>
-        </div>
+          <p>Git to system kontroli wersji, który umożliwia mi efektywne 
+            zarządzanie kodem projektów i współpracę z innymi programistami.
+             Dzięki Git mogę śledzić zmiany w kodzie, cofać je w razie potrzeby 
+             i pracować nad różnymi funkcjonalnościami równolegle. Moje doświadczenie 
+             z Git pozwala mi na profesjonalne i zorganizowane podejście do tworzenia 
+             oprogramowania.</p>
 
-        {/* GIT   */} 
-
-        <div className="technologis__container-box">
-          <h4>HTML SCSS</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur  </p>
         </div>
 
       </div>
+  </section>
+
+  <section className="itproject">
+
+    
   </section>
   
 {/* end of App below*/}
