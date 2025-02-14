@@ -41,16 +41,16 @@
 }
 
 .technologies__container-box:hover{
-    color: white;
+    color: $hover-color;
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
 }
 
 .technologies__container-box h4{
-    color: $secondary-color;   
+    color: $hover-color;   
     
 }
 
 .technologies__container-box h4:hover{
-    color: white;
+    color: $hover-color;
 }
 

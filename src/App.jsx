@@ -205,50 +205,26 @@ function App() {
 
     <h2 className="heading">It Projekt</h2>
 
-        <div className="technologies__container">
+        <div className="itproject__container">
 
 
-        {/* HTML SCSS */} 
-        <div className="technologies__container-box">
+        {/* BEST CAR */} 
+        <div className="itproject__container-box">
+          <img src="./assets/image/bc.jpg" alt="Best Car Site" srcset="100vw,50vw" />
           <h4>Best Car landpages</h4>
           <p>xxxx  </p>
         </div>
 
-        {/* JavaScript   */} 
+        {/* CV sncestors */} 
 
-        <div className="technologies__container-box">
-          <h4>JavaScript</h4>
-          <p>JavaScript to język programowania,
-             który umożliwia mi tworzenie interaktywnych i dynamicznych stron internetowych.
-              Dzięki niemu mogę dodawać animacje, obsługiwać formularze i budować 
-              responsywne aplikacje webowe. Moje umiejętności
-             JavaScript pozwalają mi tworzyć nowoczesne i angażujące projekty. </p>
-        </div>
+      
 
-        {/* React   */} 
+        {/* kafelki  */} 
 
-        <div className="technologies__container-box">
-          <h4>React</h4>
-          <p>React to biblioteka JavaScript, która pozwala mi
-             tworzyć interaktywne i dynamiczne interfejsy użytkownika oparte na
-              komponentach. Dzięki React mogę budować skalowalne i wydajne aplikacje 
-              internetowe, które zapewniają użytkownikom płynne i responsywne doświadczenie.
-               Moje umiejętności React pozwalają mi tworzyć nowoczesne i angażujące projekty,
-             spełniające najwyższe standardy jakości. </p>
-        </div>
+       
+        {/* Agile  */} 
 
-        {/* GIT   */} 
-
-        <div className="technologies__container-box">
-          <h4>GIT</h4>
-          <p>Git to system kontroli wersji, który umożliwia mi efektywne 
-            zarządzanie kodem projektów i współpracę z innymi programistami.
-             Dzięki Git mogę śledzić zmiany w kodzie, cofać je w razie potrzeby 
-             i pracować nad różnymi funkcjonalnościami równolegle. Moje doświadczenie 
-             z Git pozwala mi na profesjonalne i zorganizowane podejście do tworzenia 
-             oprogramowania.</p>
-
-        </div>
+   
 
       </div>
  
