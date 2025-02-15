@@ -209,18 +209,28 @@ function App() {
 
 
         {/* BEST CAR */} 
+        
         <div className="itproject__container-box">
-          <img src="./assets/image/bc.jpg" alt="Best Car Site" srcset="100vw,50vw" />
+          <img src="./assets/image/bc.jpg" alt="Best Car Site"   />
           <h4>Best Car landpages</h4>
           <p>xxxx  </p>
         </div>
 
         {/* CV sncestors */} 
 
-      
+        <div className="itproject__container-box">
+          <img src={require("./assets/image/bc.jpg")} alt="Best Car Site"  />
+          <h4>Best Car landpages</h4>
+          <p>xxxx  </p>
+        </div>
 
         {/* kafelki  */} 
 
+        <div className="itproject__container-box">
+          <img src="./assets/image/2.jpg" alt="Best Car Site"  />
+          <h4>Best Car landpages</h4>
+          <p>xxxx  </p>
+        </div>
        
         {/* Agile  */} 
 
