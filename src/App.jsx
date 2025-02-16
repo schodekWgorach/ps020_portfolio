@@ -211,7 +211,7 @@ function App() {
         {/* BEST CAR */} 
         
         <div className="itproject__container-box">
-          <img src="./assets/image/bc.jpg" alt="Best Car Site"   />
+          <img src={require("./assets/image/cars.jpg")} alt="Best Car Site"   />
           <h4>Best Car landpages</h4>
           <p>xxxx  </p>
         </div>
@@ -227,7 +227,7 @@ function App() {
         {/* kafelki  */} 
 
         <div className="itproject__container-box">
-          <img src="./assets/image/2.jpg" alt="Best Car Site"  />
+          <img src={require("./assets/image/bc.jpg")} alt="Best Car Site"  />
           <h4>Best Car landpages</h4>
           <p>xxxx  </p>
         </div>
