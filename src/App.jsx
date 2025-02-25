@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useAnimatedText } from "./hooks/useAnimatedText";
 import faceImage from "../src/assets/image/face.jpg";
@@ -53,8 +54,8 @@ function App() {
 
             {/* Przycisk */}
             <div className="home__button">
-              <button className="home__button-github">GitHub</button>
-              <button className="home__button-linkedin">Kontakt</button>
+              <a className="home__button-github" href="https://github.com/schodekWgorach" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a className="home__button-linkedin" href="https://linkedin.com/schodekWgorach" target="_blank" rel="noopener noreferrer">Kontakt</a>
             </div>
           </div>
 
@@ -216,7 +217,7 @@ function App() {
           <p>xxxx  </p>
         </div>
 
-        {/* CV sncestors */} 
+        {/* CV asncestors */} 
 
         <div className="itproject__container-box">
           <img src={require("./assets/image/bc.jpg")} alt="Best Car Site"  />
@@ -234,7 +235,11 @@ function App() {
        
         {/* Agile  */} 
 
-   
+        <div className="itproject__container-box">
+          <img src={require("./assets/image/bc.jpg")} alt="Best Car Site"  />
+          <h4>Best Car landpages</h4>
+          <p>xxxx</p>
+        </div>
 
       </div>
  
@@ -243,6 +248,19 @@ function App() {
   </section>
   
 {/* end of App below*/}
+<section className="contact" id="contact">
+  <h2 className="heading">Contact<span>Me</span></h2>
+  <form action="">
+    <div className="input-group">
+    <input type="text" name="name" placeholder="Full Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <textarea name="message" placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+    </div>
+  </form>
+
+
+</section>
     </div> 
   );
 }

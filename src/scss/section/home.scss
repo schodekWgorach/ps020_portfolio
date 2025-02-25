@@ -18,6 +18,7 @@
     text-align: center;
 
     &-h1 {
+        padding-top: 10rem;
         font-weight: 700;
         line-height: 3rem;
         font-size: 4rem;
@@ -30,7 +31,6 @@
         }
     }
 
- 
 }
 .home__content-animation {
     font-size: 2rem;
@@ -127,3 +127,12 @@
         }
     }
 }
+
+.itproject__container-box a {
+    text-decoration: none; /* Usuwa podkreślenie linku */
+    display: block; /* Sprawia, że link zajmuje całą szerokość boxu */
+}
+
+.itproject__container-box a:hover {
+    opacity: 0.8; /* Delikatne przyciemnienie po najechaniu */
+  }
