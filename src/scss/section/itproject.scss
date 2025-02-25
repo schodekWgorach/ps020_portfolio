@@ -1,6 +1,5 @@
 @use "../variables" as *;
 @use "sass:color";
-
 @use "../variables" as *;
 //@use "scss:colors" ;
 
@@ -12,13 +11,14 @@
     margin-top: 20px;
 }
 
-.itproject__container{
+.itproject__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 30px; // Dodajemy odstęp między elementami (dostosuj wartość)
     background-color: $background-color;
     color: $secondary-color;
-    
+    margin: 20px;
 }
 
 .itproject__container-box{
@@ -28,19 +28,24 @@
     border: 3px solid rgba(17, 12, 12, 0.9);
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-     
     transition: $background-color 0.3s ease, color 0.3 ease;
+
     
     &:hover {
-        
         color: $hover-color;
         box-shadow: 0 0 50px $hover-color;
     }
-
 }
 
 .itproject__container-box img {
     width: 300px;
     height: auto;
     //border: 2px solid red; /* Tymczasowe style do debugowania */
-  }
+}
+
+
+
+
+
+
+

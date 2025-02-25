@@ -11,9 +11,14 @@ $width: auto, $height: auto) {
     font-size: $font-size;
     cursor: pointer;
     transition: $background-color 0.3s ease,color 0.3 ease;
-    width: $width; // Dodane
-    height: $height; // Dodane
+    width: 80px; // Dodane
+    height: 30px; // Dodane
     margin: 10px;
+    display: flex;             // Włącz flexbox
+    justify-content: center; // Wyśrodkuj w poziomie
+    align-items: center;     // Wyśrodkuj w pionie
+    text-decoration: none; // Dodano właściwość usuwającą podkreślenie
+
   
     &:hover {
       background-color: $background-color;

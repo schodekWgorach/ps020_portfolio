@@ -1,0 +1,8 @@
+@use "../variables" as *;
+@use "../../mixins/mixins.scss" as *;
+
+.heading h2{
+    font-size: 8rem;
+    text-align: center;
+    margin: 8rem 0;
+}
