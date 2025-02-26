@@ -250,14 +250,23 @@ function App() {
 {/* end of App below*/}
 <section className="contact" id="contact">
   <h2 className="heading">Contact<span>Me</span></h2>
+
   <form action="">
     <div className="input-group">
-    <input type="text" name="name" placeholder="Full Name" required />
-    <input type="email" name="email" placeholder="Email" required />
-    <textarea name="message" placeholder="Message" required></textarea>
-    <button type="submit">Send</button>
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
     </div>
+    <div className="inport-group-2"> </div>
   </form>
+</section>
+
+<section className="footer">
+  <p>2025 </p>
+  <div className="social-media">
+
+  </div>
 
 
 </section>

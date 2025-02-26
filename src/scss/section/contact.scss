@@ -1,8 +1,41 @@
 @use "../variables" as *;
 @use "../../mixins/mixins.scss" as *;
 
-.heading h2{
-    font-size: 8rem;
-    text-align: center;
-    margin: 8rem 0;
-}
+
+
+
+.contact {
+  padding: 10px; // Użyj zmiennej z pliku variables.scss
+
+  &__heading { // Klasa dla nagłówka sekcji
+     //@extend .heading; // Dziedziczy style z głównego nagłówka
+    text-align: center; 
+
+    span { // Style dla elementu span w nagłówku
+      color: $primary-color; // Użyj zmiennej z pliku variables.scss
+    }
+  }
+
+  &__form { // Klasa dla formularza
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center; 
+  }
+
+  &__input-group { // Klasa dla grupy inputów
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    input,
+    textarea {
+      padding: 1rem;
+      border: 1px solid $button__border-color; // Użyj zmiennej z pliku variables.scss
+      border-radius: $button__border-radius; // Użyj zmiennej z pliku variables.scss
+    }
+  }
+
+  &__button { // Klasa dla przycisku
+    @include button__styles($background-color, $secondary-color, 10px 20px, 20px, 16px, 200px, 50px);
+}}
