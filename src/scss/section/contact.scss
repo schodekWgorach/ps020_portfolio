@@ -6,7 +6,13 @@
   font-size: 8rem;
   text-align: center;
   margin: 5rem 0;
+  color: $secondary-color; // Użyj zmiennej z pliku variables.scss
 }
+
+.heading span{
+  color: $secondary-color; 
+}
+
 
 .contact {
   padding: 10px; // Użyj zmiennej z pliku variables.scss
@@ -16,7 +22,7 @@
     text-align: center; 
 
     span { // Style dla elementu span w nagłówku
-      color: $primary-color; // Użyj zmiennej z pliku variables.scss
+      color: $secondary-color; // Użyj zmiennej z pliku variables.scss
     }
   }
 

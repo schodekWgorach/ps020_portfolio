@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useAnimatedText } from "./hooks/useAnimatedText";
 import faceImage from "../src/assets/image/face.jpg";
@@ -263,12 +262,21 @@ function App() {
 </section>
 
 <section className="footer">
-  <p>2025 </p>
-  <div className="social-media">
-
+  <div className="footer__container">
+    <div className="footer__column">
+      <h3>Column 1</h3>
+      <p>Content for column 1</p>
+    </div>
+    <div className="footer__column">
+      <h3>Column 2</h3>
+      <p>Content for column 2</p>
+    </div>
+    <div className="footer__column">
+      <h3>Column 3</h3>
+      <p>Content for column 3</p>
+    </div>
   </div>
-
-
+  <p>2025</p>
 </section>
     </div> 
   );
