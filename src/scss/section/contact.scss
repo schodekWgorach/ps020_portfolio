@@ -2,13 +2,17 @@
 @use "../../mixins/mixins.scss" as *;
 
 
-
+.heading {
+  font-size: 8rem;
+  text-align: center;
+  margin: 5rem 0;
+}
 
 .contact {
   padding: 10px; // Użyj zmiennej z pliku variables.scss
 
   &__heading { // Klasa dla nagłówka sekcji
-     //@extend .heading; // Dziedziczy style z głównego nagłówka
+    @extend .heading; // Dziedziczy style z głównego nagłówka
     text-align: center; 
 
     span { // Style dla elementu span w nagłówku
