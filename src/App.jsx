@@ -5,6 +5,7 @@ import faceImage from "../src/assets/image/face.jpg";
 import linkedinIcon from "./assets/icon/bxl-linkedin.svg";
 import githubIcon from "./assets/icon/bxl-github.svg";
 import gmailIcon from "./assets/icon/bxl-gmail.svg";
+import './scss/main.scss';
 
 function App() {
   const words = ["Web Developer", "Frontend Developer", "React Developer", "JavaScript Enthusiast"];
@@ -249,16 +250,15 @@ function App() {
   
 {/* end of App below*/}
 <section className="contact" id="contact">
-  <h2 className="heading">Contact<span>Me</span></h2>
+  <h2 className="contact__heading">Contact<span>Me</span></h2>
 
-  <form action="">
-    <div className="input-group">
+  <form className="contact__form" action="">
+    <div className="contact__input-group">
       <input type="text" name="name" placeholder="Full Name" required />
       <input type="email" name="email" placeholder="Email" required />
       <textarea name="message" placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
+      <button className="contact__button" type="submit">Send</button>
     </div>
-    <div className="inport-group-2"> </div>
   </form>
 </section>
 
