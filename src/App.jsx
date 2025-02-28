@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useAnimatedText } from "./hooks/useAnimatedText";
 import faceImage from "../src/assets/image/face.jpg";
 import linkedinIcon from "./assets/icon/bxl-linkedin.svg";
@@ -7,8 +7,13 @@ import gmailIcon from "./assets/icon/bxl-gmail.svg";
 import './scss/main.scss';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const words = ["Web Developer", "Frontend Developer", "React Developer", "JavaScript Enthusiast"];
   const { text, fade } = useAnimatedText(words, 3000); // Animacja co 3 sekundy
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <div className="App">
@@ -16,7 +21,10 @@ function App() {
         <a href="#home" className="navbar__logo">
           Szymon <span>Schodnicki</span>
         </a>
-        <div className="navbar__container-list">
+        <button className="navbar__toggle" onClick={toggleMenu}>
+          ☰
+        </button>
+        <div className={`navbar__container-list ${isMenuOpen ? "navbar__container-list--open" : ""}`}>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#education">Education</a></li>
