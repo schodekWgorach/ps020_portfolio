@@ -1,88 +1,95 @@
 @use "../variables" as *;
 
-// navbar
+
 .navbar__container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    position: fixed;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 10vh;
-    padding: 2rem 12% 2rem 12%;
-    text-decoration: none;
+    align-items: center;
+    padding: 1rem;
     background-color: $background-color;
-    z-index: 5;
-    font-weight: 800;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-
-    // &.hidden {
-    //     transform: translateY(-100%); // Ukrywa navbar poza ekranem
-    //     opacity: 0;
-    // }
-
-    // &.visible {
-    //     transform: translateY(0); // Pokazuje navbar
-    //     opacity: 1;
-    // }
-}
-
-.navbar__container a {
-    text-decoration: none;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.navbar__logo {
-    font-size: 3rem;
-    color: $secondary-color;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    display: inline-flex; /* zmienione z flex */
-    align-items: center; /* dodane dla wyrównania elementów w logo, jeśli to konieczne */
-    gap: 15px;
-    text-shadow: 0 0 5px $shadow-color;
-    
-}
-
-.navbar__logo:hover {
-    transform: scale(1.05);
-    letter-spacing: 2px;
-    text-shadow: 0 0 6px $shadow-color;
-}
-
-
-.navbar__container-list{
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    margin-left: 3rem;
-}
-
-.navbar__container-list li{
-    width: 100px;
-    display: inline;
-    list-style: none;
-    margin-left: 2rem;
-    font-size: 1.2rem;
-    
-}
-
-.navbar__container-list a {
-   color: $secondary-color;
-   cursor: pointer;
-   text-shadow: 1px 1px 3px $shadow-color;
-   transition: 0.3s ease-in-out;
-}
-
-.navbar__container-list a:hover{
-    display: inline;
-    text-shadow: 2px;
-    transform: scale(1.02);
-    color: $hover-color;
-    text-decoration: none ;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-
+  
+    .navbar__toggle {
+      display: none;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .navbar__container-list {
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+  
+        li {
+          a {
+            text-decoration: none;
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 1024px) {
+      .navbar__toggle {
+        display: block;
+      }
+  
+      .navbar__container-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: $background-color;
+        position: absolute;
+        top: 100%;
+        left: 0;
+  
+        &--open {
+          display: flex;
+        }
+  
+        ul {
+          flex-direction: column;
+          width: 100%;
+          padding: 1rem 0;
+  
+          li {
+            width: 100%;
+            text-align: center;
+  
+            a {
+              display: block;
+              width: 100%;
+              padding: 1rem;
+            }
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .navbar__container-list {
+        ul {
+          li {
+            a {
+              padding: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .navbar__container-list {
+        ul {
+          li {
+            a {
+              padding: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
