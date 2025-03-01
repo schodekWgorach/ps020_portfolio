@@ -1,100 +1,13 @@
 @use "./variables" as *;
-@use "./mixins/mixins.scss" as *;
+@use "../mixins/mixins.scss" as *;
 @use "./section/contact.scss";
 @use "./section/education.scss";
 @use "./section/footer.scss";
 @use "./section/home.scss";
 @use "./section/itproject.scss";
 @use "./section/technologies.scss";
+@use "./section/navbar.scss";
 
-.navbar__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-
-  .navbar__toggle {
-    display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .navbar__container-list {
-    ul {
-      display: flex;
-      list-style: none;
-      gap: 1rem;
-
-      li {
-        a {
-          text-decoration: none;
-          color: $secondary-color;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 1024px) {
-    .navbar__toggle {
-      display: block;
-    }
-
-    .navbar__container-list {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      background-color: $background-color;
-      position: absolute;
-      top: 100%;
-      left: 0;
-
-      &--open {
-        display: flex;
-      }
-
-      ul {
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem 0;
-
-        li {
-          width: 100%;
-          text-align: center;
-
-          a {
-            display: block;
-            width: 100%;
-            padding: 1rem;
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    .navbar__container-list {
-      ul {
-        li {
-          a {
-            padding: 0.75rem;
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 480px) {
-    .navbar__container-list {
-      ul {
-        li {
-          a {
-            padding: 0.5rem;
-          }
-        }
-      }
-    }
-  }
+body {
+  background-color: $background-color;
 }
