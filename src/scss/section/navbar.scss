@@ -1,95 +1,110 @@
 @use "../variables" as *;
 
-
 .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: $background-color;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: $background-color;
+  position: sticky;
+  top: 0;
+  z-index: 1000; // Upewnij się, że navbar jest na wierzchu innych elementów
+
+  .navbar__logo {
+    font-family: 'YourPreviousFontFamily', sans-serif; // Zastąp 'YourPreviousFontFamily' odpowiednią nazwą czcionki
+    font-size: 1.5rem;
+    color: $secondary-color;
+    text-decoration: none;
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  .navbar__toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar__container-list {
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+
+      li {
+        a {
+          font-family: 'YourPreviousFontFamily', sans-serif; // Zastąp 'YourPreviousFontFamily' odpowiednią nazwą czcionki
+          font-size: 1rem;
+          text-decoration: none;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
     .navbar__toggle {
-      display: none;
-      font-size: 2rem;
-      background: none;
-      border: none;
-      cursor: pointer;
+      display: block;
     }
-  
+
     .navbar__container-list {
-      ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: $background-color;
+      position: absolute;
+      top: 100%;
+      left: 0;
+
+      &--open {
         display: flex;
-        list-style: none;
-        gap: 1rem;
-  
-        li {
-          a {
-            text-decoration: none;
-            color: $secondary-color;
-          }
-        }
       }
-    }
-  
-    @media (max-width: 1024px) {
-      .navbar__toggle {
-        display: block;
-      }
-  
-      .navbar__container-list {
-        display: none;
+
+      ul {
         flex-direction: column;
-        align-items: center;
         width: 100%;
-        background-color: $background-color;
-        position: absolute;
-        top: 100%;
-        left: 0;
-  
-        &--open {
-          display: flex;
-        }
-  
-        ul {
-          flex-direction: column;
+        padding: 1rem 0;
+
+        li {
           width: 100%;
-          padding: 1rem 0;
-  
-          li {
+          text-align: center;
+
+          a {
+            display: block;
             width: 100%;
-            text-align: center;
-  
-            a {
-              display: block;
-              width: 100%;
-              padding: 1rem;
-            }
-          }
-        }
-      }
-    }
-  
-    @media (max-width: 768px) {
-      .navbar__container-list {
-        ul {
-          li {
-            a {
-              padding: 0.75rem;
-            }
-          }
-        }
-      }
-    }
-  
-    @media (max-width: 480px) {
-      .navbar__container-list {
-        ul {
-          li {
-            a {
-              padding: 0.5rem;
-            }
+            padding: 1rem;
           }
         }
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .navbar__container-list {
+      ul {
+        li {
+          a {
+            padding: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .navbar__container-list {
+      ul {
+        li {
+          a {
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
