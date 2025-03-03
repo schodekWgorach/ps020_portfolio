@@ -7,6 +7,7 @@
 @use "./section/itproject.scss";
 @use "./section/technologies.scss";
 @use "./section/navbar.scss";
+@import url('https://fonts.googleapis.com/css2?family=YourPreviousFontFamily:wght@400;700&display=swap');
 
 body {
   background-color: $background-color;
