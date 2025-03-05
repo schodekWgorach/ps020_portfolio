@@ -210,7 +210,7 @@ function App() {
   </section>
   {/* itProject */}  
 
-  <section className="itproject">
+  <section className="itproject" id="itprojekt">
 
     <h2 className="heading">It Projekt</h2>
 
