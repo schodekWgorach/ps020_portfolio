@@ -6,6 +6,19 @@ import githubIcon from "./assets/icon/bxl-github.svg";
 import gmailIcon from "./assets/icon/bxl-gmail.svg";
 import './scss/main.scss';
 
+/**
+ * The main App component that renders the entire application.
+ * It includes a navigation bar, home section, education section, technologies section,
+ * IT project section, contact form, and footer.
+ *
+ * @component
+ * @example
+ * return (
+ *   <App />
+ * )
+ *
+ * @returns {JSX.Element} The rendered App component.
+ */
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const words = ["Web Developer", "Frontend Developer", "React Developer", "JavaScript Enthusiast"];
