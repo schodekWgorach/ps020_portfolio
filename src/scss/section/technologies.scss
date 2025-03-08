@@ -10,7 +10,7 @@
 
 .technologies{
     padding: 50px 15px;
-    //background-color: $background-color;
+    background-color: $background-color;
     color: $secondary-color;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
@@ -23,7 +23,7 @@
     gap: 30px;
     margin: 10px 0;
     padding: 10px;
-    //background-color: beige;
+    background-color: beige;
 }
 
 .technologies__container:first-child{
@@ -33,7 +33,7 @@
 .technologies__container-box{
     border: 3px solid rgba(17, 12, 12, 0.9);
     border-radius: 10px;
-    //background-color: red;
+    background-color: red;
     padding: 30px;
     text-align: center;
     box-shadow: 3px 3px 5px rgba(30, 121, 63, 0.3);
@@ -48,10 +48,8 @@
 
 .technologies__container-box h4{
     color: $hover-color;   
-    
 }
 
 .technologies__container-box h4:hover{
-    color: $hover-color;
 }
 
