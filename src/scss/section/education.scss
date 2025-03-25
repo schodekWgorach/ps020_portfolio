@@ -33,12 +33,11 @@
 .education__timeline-items::before{
     content: "";
     position: absolute;
-    margin-top: 60px;
+    margin-top: 90px;
     width: 5px;
-    height: calc(100% + 30px);
+    height: calc(100% - 30px);
     background-color: black;
-    left: calc(50% - 1px);
-    height: calc(100% + 30px);
+    left: calc(50% + 2px);
     top: -30px;
     
 }
