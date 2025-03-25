@@ -101,10 +101,10 @@ function App() {
       <div className="education__timeline-item">
         <div className="education__timeline-dot">
 
-          <div className="education__timeline-date">2001</div>
+          <div className="education__timeline-date">1995-2000</div>
 
                 <div className="education__timeline-content">
-                  <h3>High School</h3>
+                  <h3>uj</h3>
                   <p>Lorem ipsum dolor sit amet, 
                     consectetur adipisicing </p>
                 </div>
@@ -122,7 +122,7 @@ function App() {
           <div className="education__timeline-date">2010</div>
 
                 <div className="education__timeline-content">
-                  <h3>High School</h3>
+                  <h3>informatyka</h3>
                   <p>Lorem ipsum dolor sit amet, 
                   consectetur adipisicing </p>
                 </div>
@@ -176,46 +176,57 @@ function App() {
         {/* HTML SCSS */} 
         <div className="technologies__container-box">
           <h4>HTML SCSS</h4>
-          <p>HTML i SCSS to potężne narzędzia, 
-            które pozwalają mi tworzyć piękne i funkcjonalne strony internetowe.
-             HTML służy do strukturyzowania treści, a SCSS do stylowania jej w sposób 
-             elastyczny i łatwy w utrzymaniu. Dzięki znajomości tych technologii
-             mogę realizować projekty zgodnie z najnowszymi trendami i standardami.  </p>
+          <p>HTML and SCSS are powerful tools that allow me to create beautiful and functional websites. HTML is used to structure content, while SCSS is used to style it in a way that is flexible and easy to maintain. Thanks to my knowledge of these technologies, I can implement projects in line with the latest trends and standards. </p>
         </div>
 
         {/* JavaScript   */} 
 
         <div className="technologies__container-box">
           <h4>JavaScript</h4>
-          <p>JavaScript to język programowania,
-             który umożliwia mi tworzenie interaktywnych i dynamicznych stron internetowych.
-              Dzięki niemu mogę dodawać animacje, obsługiwać formularze i budować 
-              responsywne aplikacje webowe. Moje umiejętności
-             JavaScript pozwalają mi tworzyć nowoczesne i angażujące projekty. </p>
+          <p>JavaScript is a programming language
+that allows me to create interactive and dynamic websites.
+It allows me to add animations, handle forms, and build
+responsive web applications. My JavaScript skills allow me to create modern and engaging designs.</p>
         </div>
 
         {/* React   */} 
 
         <div className="technologies__container-box">
           <h4>React</h4>
-          <p>React to biblioteka JavaScript, która pozwala mi
-             tworzyć interaktywne i dynamiczne interfejsy użytkownika oparte na
-              komponentach. Dzięki React mogę budować skalowalne i wydajne aplikacje 
-              internetowe, które zapewniają użytkownikom płynne i responsywne doświadczenie.
-               Moje umiejętności React pozwalają mi tworzyć nowoczesne i angażujące projekty,
-             spełniające najwyższe standardy jakości. </p>
+          <p>React is a JavaScript library that allows me to
+create interactive and dynamic user interfaces based on
+components. With React, I can build scalable and efficient web applications
+that provide users with a fluid and responsive experience.
+My React skills allow me to create modern and engaging designs
+that meet the highest quality standards. </p>
         </div>
 
-        {/* GIT   */} 
+        {/* Copilot   */} 
 
         <div className="technologies__container-box">
+          <h4>Copilot</h4>
+          <p>Copilot is an AI-powered companion that supports users in various tasks and projects, enhancing efficiency and creativity. Copilot can assist with answering questions, brainstorming ideas, writing code, and even generating images. With its ability to understand natural language and context, Copilot offers a seamless and intelligent experience for collaboration and productivity. My expertise with Copilot helps me approach challenges effectively and take an organized, informed approach to solving problems.</p>
+
+        </div>
+
+          {/* AI  */} 
+
+          <div className="technologies__container-box">
+          <h4>AI</h4>
+          <p>Artificial Intelligence (AI) technologies encompass a wide range of systems designed to simulate human intelligence and solve complex problems. AI-powered tools can perform tasks such as natural language processing, data analysis, image recognition, and predictive modeling. These technologies enable smarter decision-making, automation, and enhanced user experiences. My familiarity with AI systems allows me to adopt innovative and efficient approaches to tackling challenges in various domains.</p>
+
+        </div>
+
+          {/* GIT   */} 
+
+          <div className="technologies__container-box">
           <h4>GIT</h4>
-          <p>Git to system kontroli wersji, który umożliwia mi efektywne 
-            zarządzanie kodem projektów i współpracę z innymi programistami.
-             Dzięki Git mogę śledzić zmiany w kodzie, cofać je w razie potrzeby 
-             i pracować nad różnymi funkcjonalnościami równolegle. Moje doświadczenie 
-             z Git pozwala mi na profesjonalne i zorganizowane podejście do tworzenia 
-             oprogramowania.</p>
+          <p>Git is a version control system that allows me to effectively
+manage code for projects and collaborate with other developers.
+Git allows me to track code changes, revert them if necessary
+and work on different features in parallel. My experience
+with Git allows me to take a professional and organized approach to software
+development.</p>
 
         </div>
 
