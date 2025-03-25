@@ -132,3 +132,9 @@
     line-height: 22px;
     font-weight: 300;  
 }
+
+.technologies__container-box {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Add spacing between items */
+}
