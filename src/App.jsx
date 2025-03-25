@@ -101,10 +101,10 @@ function App() {
       <div className="education__timeline-item">
         <div className="education__timeline-dot">
 
-          <div className="education__timeline-date">2001</div>
+          <div className="education__timeline-date">1995-2000</div>
 
                 <div className="education__timeline-content">
-                  <h3>High School</h3>
+                  <h3>uj</h3>
                   <p>Lorem ipsum dolor sit amet, 
                     consectetur adipisicing </p>
                 </div>
@@ -122,7 +122,7 @@ function App() {
           <div className="education__timeline-date">2010</div>
 
                 <div className="education__timeline-content">
-                  <h3>High School</h3>
+                  <h3>informatyka</h3>
                   <p>Lorem ipsum dolor sit amet, 
                   consectetur adipisicing </p>
                 </div>
