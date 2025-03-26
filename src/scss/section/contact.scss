@@ -51,3 +51,11 @@
     @include button__styles($background-color, $secondary-color, 10px 20px, 20px, 16px, 200px, 50px);
   }
 }
+
+@media (max-width: 768px) { /* Target smartphones and tablets */
+    .contact h2 {
+        font-size: 3rem; /* Adjust subheading size */
+        text-align: center; /* Center-align subheading */
+        margin: 2rem 0; /* Add spacing around subheading */
+    }
+}

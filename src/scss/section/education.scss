@@ -92,7 +92,38 @@
     transform: translateX(-100px); /* Przesunięcie o 50 pikseli w lewo */
 }
 
+@media (max-width: 768px) { /* Target smartphones and tablets */
+    .education h2 {
+        font-size: 3rem; /* Adjust subheading size */
+        text-align: center; /* Center-align subheading */
+        margin: 2rem 0; /* Add spacing around subheading */
+    }
 
+    .education {
+        padding: 20px 5px; /* Adjust padding */
+    }
+
+    .education__timeline-date {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        gap: 0; /* Remove spacing between items */
+        position: absolute;
+        top: 10px; /* 10px from the top */
+        left: 20px; /* 20px from the left */
+    }
+
+    .education__timeline-dot {
+        display: none; /* Hide dots on mobile */
+    }
+
+    .education__timeline-item {
+        display: none; /* Hide timeline items on mobile */
+    }
+
+    .education__timeline-content {
+        width: 15rem; /* Adjust content width */
+    }
+}
 
 .education__timeline-content{
    background-color: $background-color;
@@ -104,8 +135,12 @@
    margin-left: 60px;
    width: 25rem;
    height: calc(100% + 40px);
-    top: -30px;
-   
+   top: -30px;
+}
+
+.education__timeline-content-AWL {
+    @extend .education__timeline-content; /* Inherit styles from .education__timeline-content */
+    height: calc(100% + 60px); /* Slightly increase the height */
 }
 
 .education__timeline-content:hover{
@@ -137,4 +172,36 @@
     display: flex;
     flex-direction: column; /* Stack items vertically */
     gap: 10px; /* Add spacing between items */
+}
+
+@media (max-width: 1366px) {
+    .heading {
+        font-size: 6rem; /* Adjust heading size */
+    }
+
+    .education {
+        padding: 40px 10px; /* Adjust padding */
+    }
+
+    .education__timeline-content {
+        width: 20rem; /* Adjust content width */
+    }
+}
+
+@media (max-width: 800px) {
+    .heading {
+        font-size: 5rem; /* Adjust heading size */
+    }
+
+    .education {
+        padding: 30px 10px; /* Adjust padding */
+    }
+
+    .education__timeline-content {
+        width: 18rem; /* Adjust content width */
+    }
+
+    .technologies__container-box {
+        gap: 8px; /* Adjust spacing */
+    }
 }
