@@ -96,7 +96,7 @@ function App() {
 
     <div className="education__timeline-items">
 
-{/* Education rok 2001 */}
+{/* Education rok 1995-2000 */}
 
       <div className="education__timeline-item">
         <div className="education__timeline-dot">
@@ -104,9 +104,22 @@ function App() {
           <div className="education__timeline-date">1995-2000</div>
 
                 <div className="education__timeline-content">
-                  <h3>uj</h3>
-                  <p>Lorem ipsum dolor sit amet, 
-                    consectetur adipisicing </p>
+                  <h3>Jagiellonian University</h3>
+                  <p>Pedagogical Therapy</p>
+                </div>
+           </div> 
+      </div>
+       
+{/* Education rok 2000 */}
+
+<div className="education__timeline-item">
+        <div className="education__timeline-dot">
+
+          <div className="education__timeline-date">2000</div>
+
+                <div className="education__timeline-content, education__timeline-content-AWL">
+                  <h3>Army of Land Forces - Reserve Officer Cadet School Military</h3>
+                  <p>Engineering</p>
                 </div>
            </div> 
       </div>
@@ -119,33 +132,17 @@ function App() {
 <div className="education__timeline-item">
         <div className="education__timeline-dot">
 
-          <div className="education__timeline-date">2010</div>
+          <div className="education__timeline-date">2002-2003</div>
 
                 <div className="education__timeline-content">
-                  <h3>informatyka</h3>
-                  <p>Lorem ipsum dolor sit amet, 
-                  consectetur adipisicing </p>
+                  <h3>University of Opole</h3>
+                  <p>Informatyka </p>
                 </div>
            </div> 
       </div>
 
 
 
-{/* Education rok 2012 */}
-
-
-<div className="education__timeline-item">
-        <div className="education__timeline-dot">
-
-          <div className="education__timeline-date">2012</div>
-
-                <div className="education__timeline-content">
-                  <h3>High School</h3>
-                  <p>Lorem ipsum dolor sit amet, 
-                  consectetur adipisicing </p>
-                </div>
-           </div> 
-      </div>
 {/* Education rok 2022 */}
 
 
@@ -155,9 +152,22 @@ function App() {
           <div className="education__timeline-date">2022</div>
 
                 <div className="education__timeline-content">
-                  <h3>High School</h3>
-                  <p>Lorem ipsum dolor sit amet, 
-                  consectetur adipisicing </p>
+                  <h3>CodersLab</h3>
+                  <p>Bootcamp - JavaScript Developer</p>
+                </div>
+           </div> 
+      </div>
+{/* Education rok 2025 */}
+
+
+<div className="education__timeline-item">
+        <div className="education__timeline-dot">
+
+          <div className="education__timeline-date">2025</div>
+
+                <div className="education__timeline-content">
+                  <h3>CodersLab - Microsoft</h3>
+                  <p> GitHub Copilot for Developers</p>
                 </div>
            </div> 
       </div>

@@ -1,7 +1,6 @@
 @use "../variables" as *;
 @use "sass:color";
-@use "../variables" as *;
-//@use "scss:colors" ;
+
 
 .itproject{
     padding: 10px 15px;
@@ -43,7 +42,13 @@
     //border: 2px solid red; /* Tymczasowe style do debugowania */
 }
 
-
+@media (max-width: 768px) { /* Target smartphones and tablets */
+    .it-project h2 {
+        font-size: 3rem; /* Adjust subheading size */
+        text-align: center; /* Center-align subheading */
+        margin: 2rem 0; /* Add spacing around subheading */
+    }
+}
 
 
 
