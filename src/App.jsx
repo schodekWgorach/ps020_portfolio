@@ -255,7 +255,7 @@ development.</p>
         
         <div className="itproject__container-box">
           <img src={require("./assets/image/cars.jpg")} alt="Best Car Site"   />
-          <h4>Best Car landpages</h4>
+          <h4>Best Car Landpages</h4>
           <p>xxxx  </p>
         </div>
 

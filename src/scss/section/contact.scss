@@ -52,6 +52,14 @@
   }
 }
 
+.contact .best-car-landpages {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    margin: 2rem 0; /* Add spacing */
+}
+
 @media (max-width: 768px) { /* Target smartphones and tablets */
     .contact h2 {
         font-size: 3rem; /* Adjust subheading size */
