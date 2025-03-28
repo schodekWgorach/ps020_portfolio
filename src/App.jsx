@@ -262,9 +262,10 @@ development.</p>
         {/* CV asncestors */} 
 
         <div className="itproject__container-box">
-          <img src={require("./assets/image/bc.jpg")} alt="Best Car Site"  />
-          <h4>Best Car landpages</h4>
-          <p>xxxx  </p>
+          <img src={require("./assets/image/CVancestors.jpg")} alt="Best Car Site"  />
+          <h4>CV asncestors</h4>
+          <p>
+          brief information about ancestors  </p>
         </div>
 
         {/* kafelki  */} 
