@@ -136,7 +136,7 @@ function App() {
 
                 <div className="education__timeline-content">
                   <h3>University of Opole</h3>
-                  <p>Informatyka </p>
+                  <p>Computer Science </p>
                 </div>
            </div> 
       </div>
@@ -305,9 +305,9 @@ development.</p>
 </section>
 
 <section className="footer">
-  <div className="footer__container">
+  {/* <div className="footer__container">
     <div className="footer__column">
-      <h3>Column 1</h3>
+      <h3>github</h3>
       <p>Content for column 1</p>
     </div>
     <div className="footer__column">
@@ -318,7 +318,7 @@ development.</p>
       <h3>Column 3</h3>
       <p>Content for column 3</p>
     </div>
-  </div>
+  </div> */}
   <p>2025</p>
 </section>
     </div> 
