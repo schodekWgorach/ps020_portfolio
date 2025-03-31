@@ -126,7 +126,7 @@ function App() {
        
 
 
-{/* Education rok 2010 */}
+{/* Education rok 2002-2003 */}
 
 
 <div className="education__timeline-item">
@@ -256,7 +256,7 @@ development.</p>
         <div className="itproject__container-box">
           <img src={require("./assets/image/cars.jpg")} alt="Best Car Site"   />
           <h4>Best Car Landpages</h4>
-          <p>xxxx  </p>
+          <p>simple website without backend </p>
         </div>
 
         {/* CV asncestors */} 
@@ -272,7 +272,7 @@ development.</p>
 
         <div className="itproject__container-box">
           <img src={require("./assets/image/bc.jpg")} alt="Best Car Site"  />
-          <h4>Best Car landpages</h4>
+          <h4>tile</h4>
           <p>xxxx  </p>
         </div>
        
@@ -280,7 +280,7 @@ development.</p>
 
         <div className="itproject__container-box">
           <img src={require("./assets/image/bc.jpg")} alt="Best Car Site"  />
-          <h4>Best Car landpages</h4>
+          <h4>auto cliker</h4>
           <p>xxxx</p>
         </div>
 
@@ -305,22 +305,48 @@ development.</p>
 </section>
 
 <section className="footer">
-  {/* <div className="footer__container">
-    <div className="footer__column">
-      <h3>github</h3>
-      <p>Content for column 1</p>
-    </div>
-    <div className="footer__column">
-      <h3>Column 2</h3>
-      <p>Content for column 2</p>
-    </div>
-    <div className="footer__column">
-      <h3>Column 3</h3>
-      <p>Content for column 3</p>
-    </div>
-  </div> */}
-  <p>2025</p>
-</section>
+        <div className="footer__container">
+          <div className="footer__column">
+            <h3>Social Media</h3>
+            <ul className="footer__social-links">
+              <li>
+                <a href="https://www.linkedin.com/in/szymon-schodnicki-7798b6256/" target="_blank" rel="noopener noreferrer">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/schodekWgorach" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="mailto:your.email@example.com">
+                  Email
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer__column">
+            <h3>Quick Links</h3>
+            <ul className="footer__quick-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#technologies">Technologies</a></li>
+              <li><a href="#itprojekt">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div className="footer__column">
+            <h3>Contact</h3>
+            <p>Szymon Schodnicki</p>
+            <p>Email: sschodnicki@gmail.com</p>
+            <p></p>
+          </div>
+        </div>
+        <div className="footer__copyright">
+          <p>&copy; {new Date().getFullYear()} Szymon Schodnicki. All rights reserved.</p>
+        </div>
+      </section>
     </div> 
   );
 }
