@@ -254,34 +254,41 @@ development.</p>
         {/* BEST CAR */} 
         
         <div className="itproject__container-box">
+        <a href="https://github.com/schodekWgorach" target="_blank" rel="noopener noreferrer">
           <img src={require("./assets/image/cars.jpg")} alt="Best Car Site"   />
+          </a>
           <h4>Best Car Landpages</h4>
           <p>simple website without backend </p>
         </div>
 
-        {/* CV asncestors */} 
+        {/* CV ancestors */} 
 
         <div className="itproject__container-box">
-          <img src={require("./assets/image/CVancestors.jpg")} alt="Best Car Site"  />
-          <h4>CV asncestors</h4>
-          <p>
-          brief information about ancestors  </p>
+          <a href="https://github.com/schodekWgorach/ps019_cv_ancestors" target="_blank" rel="noopener noreferrer">
+            <img src={require("./assets/image/CVancestors.jpg")} alt="CV Ancestors" />
+          </a>
+          <h4>CV ancestors</h4>
+          <p>Brief information about ancestors</p>
         </div>
 
-        {/* kafelki  */} 
+        {/* kafelki */}
 
         <div className="itproject__container-box">
-          <img src={require("./assets/image/bc.jpg")} alt="Best Car Site"  />
+          <a href="https://github.com/schodekWgorac/ps021a_tile_tree" target="_blank" rel="noopener noreferrer"> 
+          <img src={require("./assets/image/tile2.jpg")} alt="Best Car Site"  />
+          </a>
           <h4>tile</h4>
           <p>xxxx  </p>
         </div>
        
-        {/* Agile  */} 
+        {/*Graphical image coordinate generator  */} 
 
         <div className="itproject__container-box">
-          <img src={require("./assets/image/bc.jpg")} alt="Best Car Site"  />
-          <h4>auto cliker</h4>
-          <p>xxxx</p>
+        <a href="https://github.com/schodekWgorach/ps039_autoClicekr" target="_blank" rel="noopener noreferrer">
+          <img src={require("./assets/image/Gen.jpg")} alt="Best Car Site"  />
+          </a>
+          <h4>Graphical image coordinate generator</h4>
+          <p>coordinates of points in images</p>
         </div>
 
       </div>
