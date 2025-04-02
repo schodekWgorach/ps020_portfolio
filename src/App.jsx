@@ -58,7 +58,7 @@ function App() {
             <h3 className="home__content-animation">
               I'm a <span className={`fade-text ${fade ? "visible" : "hidden"}`}>{text}</span>
             </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p>I specialize in building dynamic and user-friendly websites, deep JavaScript functionality, semantic HTML, and advanced SCSS capabilities to create consistent and simple applications.</p>
 
             {/* Ikony społecznościowe */}
             <div className="home__content-socjalicon">
@@ -278,7 +278,8 @@ development.</p>
           <img src={require("./assets/image/tile2.jpg")} alt="Best Car Site"  />
           </a>
           <h4>tile</h4>
-          <p>xxxx  </p>
+          <p>family genealogical information on tablets </p>
+          <p>in progress </p>
         </div>
        
         {/*Graphical image coordinate generator  */} 
@@ -351,7 +352,7 @@ development.</p>
           </div>
         </div>
         <div className="footer__copyright">
-          <p>&copy; {new Date().getFullYear()} Szymon Schodnicki. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Szymon Schodnicki. </p>
         </div>
       </section>
     </div> 
