@@ -17,6 +17,14 @@ Here are the main technologies used in this project:
 - Dynamic content rendering using React.
 - Optimized for performance and accessibility.
 
+## Getting Started
+
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Run `npm start` to launch the development server.
+
+Enjoy exploring the portfolio project!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
