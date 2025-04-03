@@ -124,25 +124,23 @@
         text-align: center; /* Center-align dates */
         margin-bottom: 10px; /* Add spacing below the date */
         position: relative; /* Adjust positioning */
-        z-index: 10; /* Ensure it is above other elements */
     }
 
     .education__timeline-content {
-        position: absolute; /* Position absolutely */
-        margin-left: 0; /* Reset margin */
-        top: 50%; /* Center vertically */
-        left: 50%; /* Center horizontally */
-        transform: translate(-50%, -50%); /* Adjust for centering */
+        position: absolute; /* Keep absolute positioning */
+        margin: 0 auto 10px; /* Add spacing below each content */
         text-align: center; /* Center-align content */
-        width: 100%; /* Full width for mobile */
-        margin: 0 auto; /* Center content */
-      
+        width: 90%; /* Adjust width for better fit */
+        transform: translateX(-230px); /* Move  to the left */
+    }
+
+    .education__timeline-content-AWL {
+        margin-bottom: 80px; /* Add extra spacing for taller AWL divs */
     }
 
     .education__timeline-item {
         display: block; /* Ensure timeline items are visible */
         width: 100%; /* Full width for mobile */
-        margin-bottom: 20px; /* Add spacing between items */
         text-align: center; /* Center-align items */
     }
 
