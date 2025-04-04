@@ -135,13 +135,14 @@
     }
 
     .education__timeline-content-AWL {
-        margin-bottom: 80px; /* Add extra spacing for taller AWL divs */
+        margin-bottom: 60px; /* Add extra spacing for taller AWL divs */
     }
 
     .education__timeline-item {
         display: block; /* Ensure timeline items are visible */
         width: 100%; /* Full width for mobile */
         text-align: center; /* Center-align items */
+        margin-bottom: 60px;
     }
 
     .education__timeline-date {
@@ -177,6 +178,7 @@
 .education__timeline-content-AWL {
     @extend .education__timeline-content; /* Inherit styles from .education__timeline-content */
     height: calc(100% + 60px); /* Slightly increase the height */
+    margin-bottom: 60px; /* Add extra spacing for taller AWL divs */
 }
 
 .education__timeline-content:hover{
