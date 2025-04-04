@@ -71,9 +71,29 @@
         margin: 2rem 0; /* Add spacing around subheading */
     }
 
-    .technologies .best-car-landpages {
+    .technologies  {
         text-align: center; /* Center-align Best Car Landpages */
-        margin: 2rem 0; /* Add spacing */
+        margin: 1rem 0; /* Add spacing */
+    }
+
+    .technologies {
+        margin-top: 1px;
+    }
+
+    .technologies__container:first-child {
+        margin-top: 1rem;
+    }
+
+    .technologies__container {
+        
+        padding: 20px;
+        gap: 20px;
+      
+    }
+
+    .technologies__container-box {
+        padding: 20px;
+        width: 350px;
     }
 }
 
